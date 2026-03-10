@@ -1,0 +1,37 @@
+# ===== pyproject.toml =====
+
+[project]
+name = "label-informative-tabular-measures"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+  "pandas ~= 2.3",
+  "numpy >= 2.0",
+#  "scikit-learn ~= 1.7",
+  "seaborn ~= 0.13",
+  "scipy ~= 1.16",
+#  "pmlb~=1.0",
+  "pyarrow ~= 21.0",
+  "fastparquet ~= 2024.11",
+#  "statsmodels ~= 0.14",
+  "scikit_posthocs ~= 0.11",
+  "statds ~= 1.1",
+#  "kmedoids ~= 0.5"
+]
+
+[project.optional-dependencies]
+# install the SIMD-accelerated backends
+fast = [
+#  "simsimd ~= 6.5",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
