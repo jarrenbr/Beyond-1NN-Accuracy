@@ -2,7 +2,7 @@
 
 We provide this repository for implementation transparency. We intend to help readers to understand low-level details, such as edge cases. 
 
-`diagnostics.py` is the machinery that we use to output `results/all_time_series_scores.csv`. With this output (provided), `reproduce_figs.py` reproduces all figures in our paper. `diagnostics.py` does not run as-is, the substantial amount of preprocessing code is not yet ported over. However, the data we use is all public. `reproduce_figs.py` will run with Python 3.13; install the project with 
+`diagnostics.py` is the machinery that we use to output `results/all_time_series_scores.csv`. With this output (provided), `reproduce_figs.py` reproduces all figures in our paper. `diagnostics.py` does not run as-is, the substantial amount of preprocessing code is not yet ported over. However, the data we use is all public. `reproduce_figs.py` will run with Python 3.13; install the project with:
 
 ```pip install .```
 
